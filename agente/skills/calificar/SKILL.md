@@ -1,6 +1,6 @@
 ---
 name: calificar
-description: Calificar: genera la Calificación del Asunto a partir del Extracto. Úsala cuando la fiscal escriba "Calificar" solo, al principio del mensaje.
+description: 'Calificar: genera la Calificación del Asunto a partir del Extracto. Úsala cuando la fiscal escriba "Calificar" solo, al principio del mensaje.'
 ---
 
 # Calificar

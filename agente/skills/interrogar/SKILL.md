@@ -1,6 +1,6 @@
 ---
 name: interrogar
-description: Interrogar: interroga a la fiscal por rondas hasta alcanzar un conocimiento compartido del Asunto. Úsala cuando la fiscal escriba "Interrogar" solo, al principio del mensaje.
+description: 'Interrogar: interroga a la fiscal por rondas hasta alcanzar un conocimiento compartido del Asunto. Úsala cuando la fiscal escriba "Interrogar" solo, al principio del mensaje.'
 ---
 
 # Interrogar

@@ -1,6 +1,6 @@
 ---
 name: extractar
-description: Extractar: redacta o actualiza el Extracto del Asunto solo con lo ya fijado. Úsala cuando la fiscal escriba "Extractar" solo, al principio del mensaje.
+description: 'Extractar: redacta o actualiza el Extracto del Asunto solo con lo ya fijado. Úsala cuando la fiscal escriba "Extractar" solo, al principio del mensaje.'
 ---
 
 # Extractar

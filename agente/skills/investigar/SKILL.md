@@ -1,6 +1,6 @@
 ---
 name: investigar
-description: Investigar: consulta legislación, jurisprudencia o doctrina y cita la fuente de cada afirmación. Úsala cuando la fiscal escriba "Investigar" solo, al principio del mensaje, o cuando durante Interrogar pida consultar una norma o jurisprudencia.
+description: 'Investigar: consulta legislación, jurisprudencia o doctrina y cita la fuente de cada afirmación. Úsala cuando la fiscal escriba "Investigar" solo, al principio del mensaje, o cuando durante Interrogar pida consultar una norma o jurisprudencia.'
 ---
 
 # Investigar

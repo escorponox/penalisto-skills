@@ -1,6 +1,6 @@
 ---
 name: foliar
-description: Foliar: sustituye las páginas del PDF citadas en el Extracto por los folios reales de la causa. Úsala cuando la fiscal escriba "Foliar" solo, al principio del mensaje.
+description: 'Foliar: sustituye las páginas del PDF citadas en el Extracto por los folios reales de la causa. Úsala cuando la fiscal escriba "Foliar" solo, al principio del mensaje.'
 ---
 
 # Foliar

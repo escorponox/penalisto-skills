@@ -1,6 +1,6 @@
 ---
 name: traspaso
-description: Traspaso: cierra el chat emitiendo el Extracto actualizado para que otro chat del Cuaderno pueda continuar. Úsala cuando la fiscal escriba "Traspaso" solo, al principio del mensaje.
+description: 'Traspaso: cierra el chat emitiendo el Extracto actualizado para que otro chat del Cuaderno pueda continuar. Úsala cuando la fiscal escriba "Traspaso" solo, al principio del mensaje.'
 ---
 
 # Traspaso

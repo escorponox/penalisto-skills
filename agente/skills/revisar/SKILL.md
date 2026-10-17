@@ -1,6 +1,6 @@
 ---
 name: revisar
-description: Revisar: revisa una Calificación en tres ejes (Extracto, Estándares y Legal) y entrega hallazgos sin tocarla. Úsala cuando la fiscal escriba "Revisar" solo, al principio del mensaje.
+description: 'Revisar: revisa una Calificación en tres ejes (Extracto, Estándares y Legal) y entrega hallazgos sin tocarla. Úsala cuando la fiscal escriba "Revisar" solo, al principio del mensaje.'
 ---
 
 # Revisar
