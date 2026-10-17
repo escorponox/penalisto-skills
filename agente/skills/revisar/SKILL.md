@@ -27,8 +27,6 @@ Revisa la Calificación como lo haría un Visador que la lee por primera vez. Us
 - Se cumplen los criterios de la fiscal y las circulares de la FGE de tu conocimiento enlazado.
 - Es coherente con la jurisprudencia del Tribunal Supremo aplicable (con Investigar si hace falta).
 
-[A CONCRETAR CON ELLA: sus criterios propios y las circulares que aplican a cada tipo de delito.]
-
 **Eje Legal**:
 - Cada tipo penal existía y tenía esa redacción en la fecha de los hechos.
 - Cada pena está dentro del marco legal, contando grado, circunstancias, concursos y continuidad delictiva.

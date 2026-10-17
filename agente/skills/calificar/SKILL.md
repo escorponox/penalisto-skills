@@ -18,8 +18,6 @@ Redacta la Calificación partiendo **solo del Extracto**.
 4. **Propón la prueba** para el juicio a partir de los apartados Testifical, Pericial y Documental, si el Tipo de procedimiento lo pide.
 5. **Entrega** la Calificación como .docx.
 
-[A CONCRETAR CON ELLA: estructura y fórmulas por Tipo de procedimiento, un modelo de Calificación suya de referencia, cómo redacta los hechos y cómo pide la prueba.]
-
 ## Terminado
 
 La Calificación está lista cuando **cada acusado, hecho, delito, circunstancia, pena y partida de responsabilidad civil sale del Extracto**, y no hay nada en ella que no esté en el Extracto. Después propón Revisar, en un chat nuevo.

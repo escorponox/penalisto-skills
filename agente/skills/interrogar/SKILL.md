@@ -40,8 +40,6 @@ Cada respuesta mueve la frontera. Una pregunta que depende de otra todavía abie
 
 Recorre todos los apartados del Extracto en su orden, que es el de dependencia. Dentro del Fundamento de la acusación: delitos y título de participación → circunstancias modificativas → penas → responsabilidad civil → lo que se descarta.
 
-[A CONCRETAR CON ELLA: preguntas que nunca deben faltar, en general y por tipo de delito.]
-
 ## Terminado
 
 El interrogatorio termina cuando **cada apartado del Extracto tiene una respuesta o una entrada en Pendiente** y ella confirma que tenéis un conocimiento compartido. Entonces propón Extractar (o Traspaso, si quiere cerrar el chat).

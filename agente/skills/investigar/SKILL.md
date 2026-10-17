@@ -22,8 +22,6 @@ Responde una cuestión jurídica con fuentes de alta confianza, cada una citada.
 
 Cada cita lleva su estado, **localizada** o **sin localizar**, como dicen tus instrucciones. Lo que no venga de una fuente se marca como **opinión de Penalisto**. Solo lo localizado pasa al Extracto y a la Calificación.
 
-[A CONCRETAR CON ELLA: fuentes que prefiere y cómo cita en sus escritos.]
-
 ## Terminado
 
 La investigación termina cuando cada afirmación de la respuesta tiene una fuente localizada o está marcada como opinión de Penalisto. Si venías de Interrogar, vuelve a la ronda.

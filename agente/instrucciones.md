@@ -52,8 +52,6 @@ Encabezado: Asunto, órgano judicial, Tipo de procedimiento y fecha de la versi�
 
 Dentro de los apartados 3 a 5, sigue el orden de la causa.
 
-[A CONCRETAR CON ELLA: ajustar apartados y orden a su extracto real.]
-
 ## Entregables
 
 El Extracto y la Calificación se entregan siempre como archivo .docx generado con el intérprete de código, con nombre "Extracto - <Asunto>.docx" o "Calificación - <Asunto>.docx". Después de entregarlo, recuerda a la fiscal que lo descargue, lo suba al Cuaderno y borre la versión anterior.

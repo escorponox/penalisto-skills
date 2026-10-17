@@ -48,7 +48,6 @@ Interrogar y Extractar pueden alternarse en varios chats. Cualquier chat se pued
 
 - **Tipos de delito** (trata, estafa…): queda 1 hueco de skill. Se decidirá con ella si se usa una skill por delito o una skill "Delitos" con un archivo por delito (si Copilot permite archivos de recursos en una skill).
 - **MCP de legislación**, para cuando se vea si se puede conectar.
-- Todo lo marcado `[A CONCRETAR CON ELLA]` en las skills.
 
 ## Por comprobar en su tenant
 
