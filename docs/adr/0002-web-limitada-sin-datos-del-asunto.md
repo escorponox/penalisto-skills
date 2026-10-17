@@ -1,0 +1,3 @@
+# Investigar solo consulta 4 webs jurídicas y nunca con datos del Asunto
+
+La fiscal trabaja con datos reales del procedimiento en el tenant corporativo. Las consultas web de Copilot pasan por Bing y quedan fuera del DPA y del EU Data Boundary (Microsoft actúa como responsable independiente). En la v1, Penalisto tiene la web limitada a las 4 URLs públicas que admite el agente, elegidas por la fiscal. Sus instrucciones le prohíben meter en una consulta nombres, fechas, lugares u otros datos del Asunto: solo conceptos jurídicos. Se descartó activar "Buscar en todos los sitios web". Más adelante se estudiará un MCP de legislación.
