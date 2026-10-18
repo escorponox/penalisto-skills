@@ -20,8 +20,14 @@ Guía para las personas. El vocabulario está en [CONTEXT.md](../CONTEXT.md) y l
 ## Preparación (una sola vez)
 
 1. Crear una carpeta en OneDrive o SharePoint con el **material común**: circulares de la FGE, criterios propios, jurisprudencia del TS de referencia y modelos de Calificación que le gusten.
-2. Crear el agente **Penalisto** en el creador de agentes:
-   - **Instrucciones**: pegar [agente/instrucciones.md](../agente/instrucciones.md), solo el bloque de debajo de la línea.
+2. Desplegar el agente **Penalisto** desde este repo con Microsoft 365 Agents Toolkit ([ADR 0007](adr/0007-agente-declarativo-desde-el-repo.md)):
+   - Instalar la CLI (`npm install -g @microsoft/m365agentstoolkit-cli`) y activar las skills con `export ATK_FRONTIER=true TEAMSFX_AGENT_SKILLS=true`. Sin `ATK_FRONTIER` la CLI 1.1.18 genera el paquete sin las skills, aunque la documentación solo menciona `TEAMSFX_AGENT_SKILLS`.
+   - En [env/.env.dev](../env/.env.dev), poner en `MATERIAL_COMUN_URL` la URL de la carpeta del paso 1.
+   - Ejecutar `atk provision --env dev` e iniciar sesión con la cuenta de Microsoft 365 de la fiscal, que es la que tiene Copilot. La primera vez crea el agente; las siguientes lo actualizan con lo que haya en `agente/`.
+   - Lo que se despliega está en [agente/declarativeAgent.json](../agente/declarativeAgent.json): instrucciones, skills, web limitada (boe.es, poderjudicial.es y fiscal.es; cabe una cuarta), intérprete de código y la carpeta de material común como conocimiento.
+
+   Si el tenant no deja subir apps propias, crearlo a mano en el creador de agentes:
+   - **Instrucciones**: pegar [agente/instrucciones.md](../agente/instrucciones.md) entero.
    - **Conocimiento**: la carpeta del paso 1, enlazada. No subir archivos directamente al agente, porque no se pueden combinar con skills ([ADR 0003](adr/0003-material-comun-fuera-del-agente.md)).
    - **Web**: limitarla a 4 URLs públicas que elija ella (p. ej. boe.es, poderjudicial.es, fiscal.es y una más). Desactivar "Buscar en todos los sitios web".
    - **Intérprete de código**: activado, para que pueda entregar .docx.
@@ -49,6 +55,8 @@ Interrogar y Extractar pueden alternarse en varios chats. Cualquier chat se pued
 - **MCP de legislación**, para cuando se vea si se puede conectar.
 
 ## Por comprobar en su tenant
+
+- Que su cuenta puede subir apps personalizadas (si no, `atk provision` falla y hay que pedírselo al administrador o usar el creador de agentes).
 
 - Que el intérprete de código y las skills funcionan juntos en el mismo agente.
 - Que una skill admite archivos además del SKILL.md.

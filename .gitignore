@@ -1,0 +1,5 @@
+# Agents Toolkit
+build/
+env/.env.*.user
+.localConfigs
+.DS_Store

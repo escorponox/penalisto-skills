@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://aka.ms/m365-agents-toolkits/v1.12/yaml.schema.json
+# Despliega Penalisto con Microsoft 365 Agents Toolkit: `atk provision --env dev`.
+# Ver docs/flujo.md y docs/adr/0007-agente-declarativo-desde-el-repo.md.
+version: v1.12
+
+environmentFolderPath: ./env
+
+# atk provision: crea la app la primera vez y la actualiza las siguientes
+provision:
+  - uses: teamsApp/create
+    with:
+      name: Penalisto${{APP_NAME_SUFFIX}}
+    writeToEnvironmentFile:
+      teamsAppId: TEAMS_APP_ID
+
+  - uses: teamsApp/zipAppPackage
+    with:
+      manifestPath: ./agente/manifest.json
+      outputZipPath: ./build/appPackage.${{TEAMSFX_ENV}}.zip
+      outputFolder: ./build
+
+  - uses: teamsApp/validateAppPackage
+    with:
+      appPackagePath: ./build/appPackage.${{TEAMSFX_ENV}}.zip
+
+  - uses: teamsApp/update
+    with:
+      appPackagePath: ./build/appPackage.${{TEAMSFX_ENV}}.zip
+
+  - uses: copilotAgent/publish
+    with:
+      appPackagePath: ./build/appPackage.${{TEAMSFX_ENV}}.zip
+      scope: ${{AGENT_SCOPE}}
+    writeToEnvironmentFile:
+      titleId: M365_TITLE_ID
+      appId: M365_APP_ID
+      shareLink: SHARE_LINK

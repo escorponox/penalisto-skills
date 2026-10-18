@@ -1,0 +1,40 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.30/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.30",
+    "version": "1.0.0",
+    "id": "${{TEAMS_APP_ID}}",
+    "developer": {
+        "name": "Penalisto",
+        "websiteUrl": "https://github.com/escorponox/penalisto-skills",
+        "privacyUrl": "https://github.com/escorponox/penalisto-skills",
+        "termsOfUseUrl": "https://github.com/escorponox/penalisto-skills"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Penalisto${{APP_NAME_SUFFIX}}",
+        "full": "Penalisto"
+    },
+    "description": {
+        "short": "Asistente de una fiscal para preparar la Calificación de un Asunto penal.",
+        "full": "Agente de Microsoft 365 Copilot especializado en derecho penal español. Acompaña a la fiscal en el flujo Interrogar, Extractar, Foliar, Calificar, Revisar y Traspaso a partir de los PDF de la causa y del Extracto adjuntos en cada chat."
+    },
+    "accentColor": "#FFFFFF",
+    "supportsChannelFeatures": "tier1",
+    "composeExtensions": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "copilotAgents": {
+        "declarativeAgents": [
+            {
+                "id": "declarativeAgent",
+                "file": "declarativeAgent.json"
+            }
+        ]
+    },
+    "validDomains": []
+}

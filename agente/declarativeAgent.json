@@ -1,0 +1,43 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/copilot/declarative-agent/v1.9/schema.json",
+    "version": "v1.9",
+    "name": "Penalisto",
+    "description": "Asistente de una fiscal para preparar la Calificación de un Asunto penal: Interrogar, Extractar, Foliar, Calificar, Revisar y Traspaso.",
+    "instructions": "$[file('instrucciones.md')]",
+    "capabilities": [
+        {
+            "name": "WebSearch",
+            "sites": [
+                { "url": "https://www.boe.es" },
+                { "url": "https://www.poderjudicial.es" },
+                { "url": "https://www.fiscal.es" }
+            ]
+        },
+        {
+            "name": "CodeInterpreter"
+        },
+        {
+            "name": "OneDriveAndSharePoint",
+            "items_by_url": [
+                { "url": "${{MATERIAL_COMUN_URL}}" }
+            ]
+        }
+    ],
+    "conversation_starters": [
+        { "title": "Empezar o seguir un Asunto", "text": "Interrogar" },
+        { "title": "Redactar el Extracto", "text": "Extractar" },
+        { "title": "Poner los Acontecimientos", "text": "Foliar" },
+        { "title": "Redactar la Calificación", "text": "Calificar" },
+        { "title": "Revisar la Calificación", "text": "Revisar" },
+        { "title": "Cerrar el chat", "text": "Traspaso" }
+    ],
+    "agent_skills": [
+        { "folder": "skills/interrogar" },
+        { "folder": "skills/investigar" },
+        { "folder": "skills/extractar" },
+        { "folder": "skills/foliar" },
+        { "folder": "skills/calificar" },
+        { "folder": "skills/revisar" },
+        { "folder": "skills/traspaso" }
+    ]
+}
