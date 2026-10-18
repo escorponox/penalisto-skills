@@ -38,7 +38,8 @@ Guía para las personas. El vocabulario está en [CONTEXT.md](../CONTEXT.md) y l
 ## Por cada Asunto
 
 1. Guardar en una carpeta propia del Asunto (en OneDrive o en el equipo) los **PDF de la causa, un PDF por Acontecimiento**, con nombres que digan qué contienen ("Atestado GC.pdf", "Declaración judicial perjudicada.pdf"), y, si existe, el **índice de la causa**. Así la página de cada PDF es su folio ([ADR 0006](adr/0006-folios-son-paginas-de-cada-acontecimiento.md)). Ahí se irá guardando también el último Extracto.
-2. Para **cada chat**: abrir Penalisto, **adjuntar** los PDF de la causa y el último Extracto (si ya hay), y escribir el nombre del paso solo, al principio del mensaje. Para Foliar, adjuntar también el índice; para Revisar, el Extracto y la Calificación.
+2. Para **cada chat**: abrir Penalisto y **adjuntar** los PDF de la causa y el último Extracto (si ya hay). Para Foliar, adjuntar también el índice; para Revisar, el Extracto y la Calificación. Copilot solo deja adjuntar 3 archivos por mensaje, así que se suben en varios mensajes seguidos (la **Carga**): Penalisto solo contesta con lo recibido y espera, sin analizar nada.
+3. Cuando estén todos, escribir el nombre del paso solo, al principio del mensaje.
 
 | Paso | Qué hace | Termina cuando |
 |---|---|---|
@@ -65,4 +66,5 @@ Interrogar y Extractar pueden alternarse en varios chats. Cualquier chat se pued
 - Que una skill admite archivos además del SKILL.md, y que el intérprete de código puede abrir `plantilla-extracto.docx` de Extractar (también desde Foliar y Traspaso). Si no, subir la plantilla a la carpeta de material común.
 - Que una skill puede aplicar otra (Traspaso aplica Extractar; Interrogar aplica Investigar).
 - Que el .docx generado se descarga bien y se puede adjuntar en otro chat.
-- Cuántos PDF y de qué tamaño admite un chat como adjuntos.
+- Cuántos PDF y de qué tamaño admite un chat como adjuntos (por mensaje, 3).
+- Que Penalisto respeta la Carga: no se pone a analizar con los primeros 3 PDF.

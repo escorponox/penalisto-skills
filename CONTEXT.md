@@ -18,6 +18,10 @@ _Avoid_: prompt, plantilla
 Los archivos que la fiscal adjunta al abrir cada chat con Penalisto: los PDF de la causa, el Extracto más reciente y, si hace falta, el índice de la causa o la Calificación. Es lo único que Penalisto ve del Asunto, porque cada chat empieza de cero. Es lo que más se parece a un repo de Pocock.
 _Avoid_: Cuaderno, notebook, carpeta
 
+**Carga**:
+Fase con la que empieza cada chat: la fiscal sube los Adjuntos en varios mensajes, porque Copilot solo deja adjuntar 3 archivos por mensaje. Penalisto no trabaja durante la Carga: solo acusa recibo. Termina cuando la fiscal nombra un paso.
+_Avoid_: subida, init
+
 ### Personas
 
 **Visador**:
