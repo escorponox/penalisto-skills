@@ -19,14 +19,14 @@ Guía para las personas. El vocabulario está en [CONTEXT.md](../CONTEXT.md) y l
 
 ## Preparación (una sola vez)
 
-1. Crear una carpeta en OneDrive o SharePoint con el **material común**: circulares de la FGE, criterios propios, jurisprudencia del TS de referencia y modelos de Calificación que le gusten.
-2. En GitHub, crear la variable `MATERIAL_COMUN_URL` (Settings → Secrets and variables → Actions → Variables) con la URL de la carpeta del paso 1.
+1. Opcional, se puede añadir más tarde: crear una carpeta en OneDrive o SharePoint con el **material común**, es decir, lo que no está en las webs permitidas (criterios propios, modelos de Calificación que le gusten, jurisprudencia del TS de referencia, las circulares de la FGE que más use).
+2. Si existe la carpeta, crear en GitHub la variable `MATERIAL_COMUN_URL` (Settings → Secrets and variables → Actions → Variables) con su URL y volver a lanzar la Action. Sin ella, el agente sale sin acceso a OneDrive: funciona igual, pero Revisar no tiene sus criterios con los que comparar y la Calificación no sigue sus modelos.
 3. Instalar el agente **Penalisto** ([ADR 0007](adr/0007-agente-declarativo-desde-el-repo.md)). Cada cambio en `agente/` que llega a `main` hace que la GitHub Action genere `penalisto.zip` y lo publique en [Releases](https://github.com/escorponox/penalisto-skills/releases/latest). La fiscal no instala nada:
    - Descargar [penalisto.zip](https://github.com/escorponox/penalisto-skills/releases/latest/download/penalisto.zip) con la sesión de GitHub iniciada: el repo es privado y ella necesita una cuenta con acceso de lectura. Si no tiene cuenta, lo descarga quien mantiene el repo y se lo manda.
    - En Teams o en la app de Microsoft 365: Aplicaciones → Administrar tus aplicaciones → Cargar una aplicación personalizada, y elegir el .zip.
    - Repetirlo cada vez que haya una versión nueva: la app conserva su ID, así que sustituye a la anterior.
-   - Lo que lleva el paquete está en [agente/declarativeAgent.json](../agente/declarativeAgent.json): instrucciones, skills, web limitada (boe.es, poderjudicial.es y fiscal.es; cabe una cuarta), intérprete de código y la carpeta de material común como conocimiento.
-   - Para generarlo en local: `MATERIAL_COMUN_URL=… ./empaquetar.sh` (necesita Node), que lo deja en `dist/penalisto.zip`.
+   - Lo que lleva el paquete está en [agente/declarativeAgent.json](../agente/declarativeAgent.json): instrucciones, skills, web limitada (boe.es, poderjudicial.es y fiscal.es; cabe una cuarta), intérprete de código y, si hay URL, la carpeta de material común como conocimiento.
+   - Para generarlo en local: `./empaquetar.sh` (necesita Node, y opcionalmente `MATERIAL_COMUN_URL=…` delante), que lo deja en `dist/penalisto.zip`.
 
    Si el tenant no deja subir apps propias, crearlo a mano en el creador de agentes:
    - **Instrucciones**: pegar [agente/instrucciones.md](../agente/instrucciones.md) entero.

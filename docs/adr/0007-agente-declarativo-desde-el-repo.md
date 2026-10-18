@@ -2,7 +2,7 @@
 
 Penalisto se creaba a mano en el creador de agentes: pegar las instrucciones, regenerar los .zip y subir cada skill otra vez tras cada cambio. Ahora `agente/` es un paquete de app de Microsoft 365 Agents Toolkit (manifiesto de agente declarativo v1.9, que admite skills como carpetas con su SKILL.md). Una GitHub Action genera `penalisto.zip` en cada cambio y lo publica como Release, y la fiscal lo carga como app personalizada desde Teams o la app de Microsoft 365. Las instrucciones y las skills siguen siendo los mismos archivos, así que el repo es la única fuente. Las skills están en preview (octubre de 2026) y la CLI solo las mete en el paquete con `ATK_FRONTIER=true`.
 
-El conocimiento se limita a la carpeta de material común por URL (`MATERIAL_COMUN_URL`), porque sin URL el agente buscaría en todo el OneDrive de la fiscal y mezclaría Asuntos. La web se limita a los mismos sitios de [ADR 0002](0002-web-limitada-sin-datos-del-asunto.md).
+El conocimiento se limita a la carpeta de material común por URL (`MATERIAL_COMUN_URL`), porque sin URL la capacidad de OneDrive buscaría en todo el OneDrive de la fiscal y mezclaría Asuntos. La carpeta es opcional: si no hay URL, `empaquetar.sh` quita esa capacidad del paquete y el agente se queda sin acceso a OneDrive. La web se limita a los mismos sitios de [ADR 0002](0002-web-limitada-sin-datos-del-asunto.md).
 
 ## Considered Options
 
