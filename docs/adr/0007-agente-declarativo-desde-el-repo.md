@@ -13,5 +13,5 @@ El conocimiento se limita a la carpeta de material común por URL (`MATERIAL_COM
 
 - Cada versión sigue necesitando que ella cargue el .zip, pero es un solo archivo con un enlace fijo, en vez de pegar instrucciones y subir 7 .zip.
 - El ID de la app está fijo en `env/.env.dev` y la versión es `1.0.<n.º de ejecución>`, para que cada carga sustituya a la anterior.
-- El repo es público, así que `penalisto.zip` y la URL del material común que lleva dentro son visibles para cualquiera. La URL no se escribe en el repo, pero sí acaba en la Release.
+- El repo es privado porque `penalisto.zip` lleva dentro la URL del material común, que incluye el nombre de la organización y, si es su OneDrive, el usuario de la fiscal. Para descargar la Release hay que tener acceso al repo: ella necesita una cuenta de GitHub con acceso de lectura, o se lo manda quien mantiene el repo. La URL tampoco se escribe en el repo: va en la variable `MATERIAL_COMUN_URL`.
 - Hace falta que el tenant permita cargar apps personalizadas, o que un administrador suba el .zip al catálogo de la organización. Si no, queda el camino manual: los .zip por skill de `empaquetar.sh` y el creador de agentes.
