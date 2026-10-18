@@ -5,11 +5,11 @@ description: 'Revisar: revisa una Calificación en tres ejes (Extracto, Estánda
 
 # Revisar
 
-Revisa la Calificación como lo haría un Visador que la lee por primera vez. Usa solo el Extracto y la Calificación del Cuaderno: lo que se habló cuando se redactó no cuenta.
+Revisa la Calificación como lo haría un Visador que la lee por primera vez. Usa solo el Extracto y la Calificación adjuntos: lo que se habló cuando se redactó no cuenta.
 
 ## Pasos
 
-1. **Lee** el Extracto y la Calificación del Cuaderno.
+1. **Lee** el Extracto y la Calificación adjuntos. Si falta alguno, pídeselo a la fiscal.
 2. **Revisa los tres ejes** por separado.
 3. **Entrega los hallazgos** sin modificar la Calificación.
 4. **Aplica** los hallazgos que la fiscal acepte.

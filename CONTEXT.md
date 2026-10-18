@@ -14,9 +14,9 @@ _Avoid_: bot, asistente, Copilot (Copilot es la plataforma, no el agente)
 Paquete de instrucciones (SKILL.md) instalado en Penalisto que define cómo ejecutar un paso del flujo.
 _Avoid_: prompt, plantilla
 
-**Cuaderno**:
-Un cuaderno de Copilot (Copilot Notebook) dedicado a un único Asunto, con sus archivos, Páginas y chats. Es lo que más se parece a un repo de Pocock.
-_Avoid_: carpeta, notebook, proyecto
+**Adjuntos**:
+Los archivos que la fiscal adjunta al abrir cada chat con Penalisto: los PDF de la causa, el Extracto más reciente y, si hace falta, el índice de la causa o la Calificación. Es lo único que Penalisto ve del Asunto, porque cada chat empieza de cero. Es lo que más se parece a un repo de Pocock.
+_Avoid_: Cuaderno, notebook, carpeta
 
 ### Personas
 
@@ -39,10 +39,6 @@ La clase de procedimiento del Asunto (sumario, abreviado, jurado, delitos leves�
 _Avoid_: tipo de causa
 
 ### Pasos del flujo
-
-**init**:
-Primer mensaje de todo chat con Penalisto. Solo lo inicializa ("Penalisto inicializado") para poder moverlo al Cuaderno. Lo resuelven las instrucciones del agente, no una Skill.
-_Avoid_: retomar, arrancar
 
 **Interrogar**:
 Paso en el que Penalisto hace preguntas por rondas hasta alcanzar con la fiscal un conocimiento compartido del Asunto. Dentro de este paso se pueden lanzar Investigar y analizar documentos de la causa.
@@ -81,7 +77,7 @@ Eje de Revisar que comprueba que las penas estén dentro del marco legal, que lo
 _Avoid_: eje jurídico
 
 **Traspaso**:
-Paso con el que se cierra un chat: Penalisto emite el Extracto actualizado para que la fiscal lo suba al Cuaderno y otro chat continúe.
+Paso con el que se cierra un chat: Penalisto emite el Extracto actualizado para que la fiscal lo adjunte en el chat siguiente y este continúe.
 _Avoid_: resumen, handoff
 
 **¿Cómo?**:

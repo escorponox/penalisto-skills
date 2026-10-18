@@ -6,7 +6,7 @@ Guía para las personas. El vocabulario está en [CONTEXT.md](../CONTEXT.md) y l
 
 | Pocock | Penalisto | Notas |
 |---|---|---|
-| repo | Cuaderno (uno por Asunto) | |
+| repo | Adjuntos de cada chat (PDF de la causa + Extracto) | No hay Cuaderno ([ADR 0005](adr/0005-sin-cuaderno-adjuntos-en-cada-chat.md)) |
 | `grill-me` / `grilling` | Interrogar | Desde aquí se lanza Investigar y se analizan documentos |
 | `research` | Investigar | Web limitada y sin datos del Asunto ([ADR 0002](adr/0002-web-limitada-sin-datos-del-asunto.md)) |
 | `to-spec` | Extractar | El Extracto hace de spec |
@@ -29,9 +29,8 @@ Guía para las personas. El vocabulario está en [CONTEXT.md](../CONTEXT.md) y l
 
 ## Por cada Asunto
 
-1. Crear un **Cuaderno** con el nombre del Asunto.
-2. Subir los **PDF de la causa** con nombres que digan qué contienen ("Tomo 1 – atestado y declaraciones.pdf"). Si existe, subir también el **índice de la causa con folios**.
-3. Para **cada chat**: abrir Penalisto, escribir `init`, esperar "Penalisto inicializado", **mover el chat al Cuaderno** (… > Mover al cuaderno) y escribir el nombre del paso solo, al principio del mensaje.
+1. Guardar en una carpeta propia del Asunto (en OneDrive o en el equipo) los **PDF de la causa**, con nombres que digan qué contienen ("Tomo 1 – atestado y declaraciones.pdf"), y, si existe, el **índice de la causa con folios**. Ahí se irá guardando también el último Extracto.
+2. Para **cada chat**: abrir Penalisto, **adjuntar** los PDF de la causa y el último Extracto (si ya hay), y escribir el nombre del paso solo, al principio del mensaje. Para Foliar, adjuntar también el índice; para Revisar, el Extracto y la Calificación.
 
 | Paso | Qué hace | Termina cuando |
 |---|---|---|
@@ -40,7 +39,7 @@ Guía para las personas. El vocabulario está en [CONTEXT.md](../CONTEXT.md) y l
 | **Foliar** | Cambia las páginas del PDF por los folios reales, por tandas (o con el índice). | Ninguna cita queda solo con la página del PDF, salvo las anotadas en Pendiente. |
 | **Calificar** | Genera la Calificación a partir del Extracto. Si Pendiente no está vacío o faltan folios, lo avisa y pregunta si sigue. | Cada elemento de la Calificación sale del Extracto. |
 | **Revisar** | **En un chat nuevo.** Hallazgos graves y menores en los ejes Extracto, Estándares y Legal, sin tocar nada. Después aplica los que ella acepte. | Ella ha decidido sobre cada hallazgo. |
-| **Traspaso** | Cierra el chat y emite el Extracto en .docx. | Un chat nuevo podría seguir solo con el Extracto. Después ella lo **descarga, lo sube al Cuaderno y borra el anterior**. |
+| **Traspaso** | Cierra el chat y emite el Extracto en .docx. | Un chat nuevo podría seguir solo con el Extracto. Después ella lo **descarga, sustituye el anterior en la carpeta del Asunto y lo adjunta en el chat siguiente**. |
 
 Interrogar y Extractar pueden alternarse en varios chats. Cualquier chat se puede cerrar con Traspaso en cualquier momento.
 
@@ -54,4 +53,5 @@ Interrogar y Extractar pueden alternarse en varios chats. Cualquier chat se pued
 - Que el intérprete de código y las skills funcionan juntos en el mismo agente.
 - Que una skill admite archivos además del SKILL.md.
 - Que una skill puede aplicar otra (Traspaso aplica Extractar; Interrogar aplica Investigar).
-- Que el .docx generado se descarga bien y se puede subir al Cuaderno.
+- Que el .docx generado se descarga bien y se puede adjuntar en otro chat.
+- Cuántos PDF y de qué tamaño admite un chat como adjuntos.

@@ -1,18 +1,18 @@
 ---
 name: traspaso
-description: 'Traspaso: cierra el chat emitiendo el Extracto actualizado para que otro chat del Cuaderno pueda continuar. Úsala cuando la fiscal escriba "Traspaso" solo, al principio del mensaje.'
+description: 'Traspaso: cierra el chat emitiendo el Extracto actualizado para que otro chat pueda continuar con él adjunto. Úsala cuando la fiscal escriba "Traspaso" solo, al principio del mensaje.'
 ---
 
 # Traspaso
 
-Deja el Asunto listo para que un chat nuevo, que no ha visto esta conversación, siga trabajando solo con el Cuaderno.
+Deja el Asunto listo para que un chat nuevo, que no ha visto esta conversación, siga trabajando solo con los PDF de la causa y el Extracto adjuntos.
 
 ## Pasos
 
 1. **Actualiza el Extracto** con todo lo fijado en este chat, aplicando la skill Extractar. Si todavía no había Extracto, crea uno provisional con lo que haya.
 2. **Reescribe Pendiente** para el chat siguiente: cada entrada dice qué falta, por qué y en qué paso se resuelve (Interrogar, Foliar…). La primera entrada es lo siguiente que hay que hacer.
 3. **Revisa que no se pierde nada**: cada decisión de este chat está en su apartado del Extracto o en Pendiente.
-4. **Entrega** el Extracto como .docx.
+4. **Entrega** el Extracto como .docx y recuerda a la fiscal que lo adjunte, junto con los PDF de la causa, en el chat siguiente.
 
 ## Terminado
 

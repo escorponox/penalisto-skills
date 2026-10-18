@@ -10,7 +10,7 @@ La fiscal descarga los documentos de la causa unidos en un solo PDF, así que la
 ## Pasos
 
 1. **Haz una lista de las citas sin folio** del Extracto, numeradas: documento, fecha, página del PDF y afirmación que respalda.
-2. **Si el Cuaderno tiene el índice de la causa**, propón el folio de cada cita con ese índice y marca las dudosas.
+2. **Si la fiscal ha adjuntado el índice de la causa**, propón el folio de cada cita con ese índice y marca las dudosas.
 3. **Pregunta por tandas de 10**: enseña cada cita con el folio que propones (o en blanco) y espera a que ella confirme o corrija.
 4. **Si un folio no aparece**, la cita se queda con la página del PDF y entra en Pendiente.
 5. **Entrega** el Extracto actualizado como .docx.

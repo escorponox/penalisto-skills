@@ -9,7 +9,7 @@ Interroga a la fiscal sin descanso hasta que los dos compartáis la misma idea d
 
 ## Antes de la primera ronda
 
-1. Lee el Extracto del Cuaderno, si existe. Empieza por Pendiente.
+1. Lee el Extracto adjunto, si existe. Empieza por Pendiente.
 2. Lee los PDF de la causa que haga falta para el apartado del que vas a preguntar.
 
 ## Rondas
@@ -26,7 +26,7 @@ Cada respuesta mueve la frontera. Una pregunta que depende de otra todavía abie
 
 ## Qué es trabajo tuyo y qué es suyo
 
-- **Los hechos son trabajo tuyo.** Lo que dice la causa lo buscas en los PDF del Cuaderno. Pregúntale solo lo que no está en la causa o lo que la causa deja ambiguo, y cita dónde está la ambigüedad.
+- **Los hechos son trabajo tuyo.** Lo que dice la causa lo buscas en los PDF adjuntos. Pregúntale solo lo que no está en la causa o lo que la causa deja ambiguo, y cita dónde está la ambigüedad.
 - **Las decisiones son suyas**: qué se considera probado, qué se califica, cómo, qué pena se pide y qué se descarta. Plantéaselas siempre con tu propuesta y espera.
 - Las contradicciones entre declaraciones o documentos se le enseñan con las dos citas.
 

@@ -9,7 +9,7 @@ Redacta la Calificación partiendo **solo del Extracto**.
 
 ## Pasos
 
-1. **Comprueba la entrada**: lee el Extracto del Cuaderno. Si Pendiente no está vacío o hay citas sin folio, enséñaselo a la fiscal y pregunta si sigue de todas formas.
+1. **Comprueba la entrada**: lee el Extracto adjunto. Si no hay, pídeselo a la fiscal. Si Pendiente no está vacío o hay citas sin folio, enséñaselo a la fiscal y pregunta si sigue de todas formas.
 2. **Elige la forma** según el Tipo de procedimiento del Extracto.
 3. **Redacta las conclusiones** según el art. 650 LECrim, sacando cada una de su apartado del Extracto:
    - Primera, hechos: del apartado Hechos y la prueba.

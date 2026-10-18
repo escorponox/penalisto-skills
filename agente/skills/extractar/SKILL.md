@@ -9,7 +9,7 @@ Pon por escrito en el Extracto lo que ya está fijado: sintetiza lo que hay en l
 
 ## Pasos
 
-1. **Reúne lo fijado**: la conversación de este chat, el Extracto más reciente del Cuaderno (si existe) y los PDF de la causa.
+1. **Reúne lo fijado**: la conversación de este chat, el Extracto adjunto (si existe) y los PDF de la causa.
 2. **Redacta el Extracto** con la estructura de tus instrucciones. Si ya existía, actualízalo: conserva lo que siga valiendo y cambia solo lo que la conversación haya modificado.
 3. **Cita cada afirmación** como dicen tus instrucciones (Fuentes de verdad).
 4. **Escribe el Fundamento de la acusación** para alguien que no ha estado en la conversación: el Visador o el Fiscal de juicio tienen que entender por qué se acusa y con qué prueba sin preguntar a nadie.
