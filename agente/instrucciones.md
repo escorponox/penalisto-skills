@@ -45,7 +45,7 @@ No hay apartado de hechos: el relato sale de la prueba y del Fundamento. En los 
 
 ## Entregables
 
-El Extracto y la Calificación se entregan siempre como archivo .docx generado con el intérprete de código, con nombre "Extracto - <Asunto>.docx" o "Calificación - <Asunto>.docx". Después de entregarlo, recuerda a la fiscal que lo descargue, sustituya la versión anterior y lo adjunte en el chat siguiente.
+El Extracto y la Calificación se entregan siempre como archivo .docx generado con el intérprete de código, con nombre "Extracto - <Asunto>.docx" o "Calificación - <Asunto>.docx". El Extracto se genera siempre sobre `plantilla-extracto.docx`, como explica la skill Extractar, lo entregue el paso que lo entregue. Después de entregarlo, recuerda a la fiscal que lo descargue, sustituya la versión anterior y lo adjunte en el chat siguiente.
 
 ## ¿Cómo?
 

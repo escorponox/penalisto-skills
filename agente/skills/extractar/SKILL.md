@@ -14,7 +14,7 @@ Pon por escrito en el Extracto lo que ya está fijado: sintetiza lo que hay en l
 3. **Cita cada afirmación** como dicen tus instrucciones: Acontecimiento y folio, o el nombre del PDF entre corchetes si aún no tiene número.
 4. **Escribe el Fundamento de la acusación** para alguien que no ha estado en la conversación (ver abajo).
 5. **Pasa a Pendiente** todo lo que esté sin decidir, sea contradictorio o no tenga cita, tal cual: decidirlo es cosa de la fiscal.
-6. **Entrega** el Extracto como .docx.
+6. **Entrega** el Extracto como .docx generado sobre `plantilla-extracto.docx` (ver abajo).
 
 ## Cómo se escribe cada apartado
 
@@ -41,6 +41,37 @@ Para cada acusado y cada delito, el Fundamento tiene que responder a cinco pregu
 5. ¿Por qué basta para condenar?
 
 **Encabezado y pie**, tal como dicen tus instrucciones. La fecha es la de hoy.
+
+## Generar el .docx
+
+Usa siempre la plantilla `plantilla-extracto.docx` de esta skill: ya trae el escudo y "Fiscalía de Área de Elche" en el encabezado, el número de página en el pie, los márgenes y Arial 12 con interlineado 1,5. Ábrela con el intérprete de código (python-docx), borra los párrafos de ejemplo y escribe cada párrafo con su estilo. No pongas formato a mano: el estilo ya lo lleva.
+
+| Estilo | Para |
+|---|---|
+| Extracto Cabecera | Las tres líneas del encabezado: órgano, procedimiento, NGF |
+| Extracto Titulo | "EXTRACTO" |
+| Extracto Apartado | Título de cada apartado: ACUSADOS, TESTIFICAL, PERICIAL, DOCUMENTAL, FUNDAMENTO DE LA ACUSACIÓN, PENDIENTE |
+| Extracto Persona | Nombre del acusado o testigo, y "Calificación propuesta: <acusado>" |
+| Extracto Cita | Línea de cita y tipo de cada declaración ("A. 9 (f. 2-3). Denuncia.") |
+| Extracto Texto | Lo que declara, las notas, las líneas de Documental y Pericial, y el Fundamento |
+| Extracto Lista | Puntos de una declaración larga y de la Calificación propuesta (la raya la pone el estilo) |
+| Extracto Folio | Folios desglosados dentro del atestado en Documental |
+| Extracto Pendiente | Cada entrada de Pendiente (el número lo pone el estilo) |
+| Extracto Firma | "Elche, <fecha>", "La Fiscal", "Marta Lacasa", tras un párrafo vacío de Extracto Texto |
+
+```python
+from docx import Document
+doc = Document("plantilla-extracto.docx")
+for p in list(doc.paragraphs):
+    p._element.getparent().remove(p._element)
+doc.add_paragraph("PA 604/2026", style="Extracto Cabecera")
+p = doc.add_paragraph(style="Extracto Texto")
+p.add_run("Prueba de cargo: ").bold = True   # negrita solo para una etiqueta dentro del texto
+p.add_run("atestado, declaraciones de los testigos e informe forense.")
+doc.save("Extracto - <Asunto>.docx")
+```
+
+Si no encuentras la plantilla, dilo y genera el .docx con ese mismo formato: A4, márgenes de 2,5 cm arriba y abajo y 3 cm a los lados, Arial 12, interlineado 1,5, justificado. Cabecera en negrita; "EXTRACTO" centrado, en negrita y subrayado; títulos de apartado en mayúsculas y negrita dentro de un recuadro; nombres en negrita; líneas de cita subrayadas; firma alineada a la derecha.
 
 ## Terminado
 

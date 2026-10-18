@@ -62,7 +62,7 @@ Interrogar y Extractar pueden alternarse en varios chats. Cualquier chat se pued
 - Que cargar una versión nueva de `penalisto.zip` sustituye a la anterior y no deja dos Penalisto.
 
 - Que el intérprete de código y las skills funcionan juntos en el mismo agente.
-- Que una skill admite archivos además del SKILL.md.
+- Que una skill admite archivos además del SKILL.md, y que el intérprete de código puede abrir `plantilla-extracto.docx` de Extractar (también desde Foliar y Traspaso). Si no, subir la plantilla a la carpeta de material común.
 - Que una skill puede aplicar otra (Traspaso aplica Extractar; Interrogar aplica Investigar).
 - Que el .docx generado se descarga bien y se puede adjuntar en otro chat.
 - Cuántos PDF y de qué tamaño admite un chat como adjuntos.

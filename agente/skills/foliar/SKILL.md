@@ -13,7 +13,7 @@ La fiscal adjunta cada Acontecimiento en su propio PDF, así que el folio ya es 
 2. **Propón el número de cada uno** si lo puedes saber: por el índice de la causa si la fiscal lo ha adjuntado, o porque el propio PDF lo dice. Si no, déjalo en blanco. Marca los dudosos.
 3. **Enséñale la lista entera de una vez** y espera a que ella confirme, corrija o rellene los números.
 4. **Sustituye cada corchete** por su número en todo el Extracto. Si un PDF contiene varios Acontecimientos, o de un PDF no se sabe el número, deja su corchete y anótalo en Pendiente.
-5. **Entrega** el Extracto actualizado como .docx.
+5. **Entrega** el Extracto actualizado como .docx, sobre la plantilla de la skill Extractar.
 
 ## Terminado
 
