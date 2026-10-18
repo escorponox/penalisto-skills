@@ -3,3 +3,5 @@ build/
 env/.env.*.user
 .localConfigs
 .DS_Store
+# Lleva la URL del material común: se publica en Releases, no en git
+dist/penalisto.zip

@@ -1,0 +1,47 @@
+# Genera penalisto.zip en cada cambio del agente y lo publica como Release.
+# La fiscal lo descarga de releases/latest y lo carga como app personalizada (ADR 0007).
+name: Empaquetar Penalisto
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - agente/**
+      - env/**
+      - empaquetar.sh
+      - .github/workflows/empaquetar.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  empaquetar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Generar el paquete
+        env:
+          MATERIAL_COMUN_URL: ${{ vars.MATERIAL_COMUN_URL }}
+          APP_VERSION: 1.0.${{ github.run_number }}
+        run: |
+          if [ -z "$MATERIAL_COMUN_URL" ]; then
+            echo "::error::Falta la variable MATERIAL_COMUN_URL (Settings → Secrets and variables → Actions → Variables)"
+            exit 1
+          fi
+          ./empaquetar.sh
+
+      - name: Publicar la Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: 1.0.${{ github.run_number }}
+        run: |
+          gh release create "v$VERSION" dist/penalisto.zip \
+            --title "Penalisto $VERSION" \
+            --notes "Commit ${GITHUB_SHA::7}. Descargar penalisto.zip y cargarlo como app personalizada." \
+            --latest

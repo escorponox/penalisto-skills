@@ -20,11 +20,13 @@ Guía para las personas. El vocabulario está en [CONTEXT.md](../CONTEXT.md) y l
 ## Preparación (una sola vez)
 
 1. Crear una carpeta en OneDrive o SharePoint con el **material común**: circulares de la FGE, criterios propios, jurisprudencia del TS de referencia y modelos de Calificación que le gusten.
-2. Desplegar el agente **Penalisto** desde este repo con Microsoft 365 Agents Toolkit ([ADR 0007](adr/0007-agente-declarativo-desde-el-repo.md)):
-   - Instalar la CLI (`npm install -g @microsoft/m365agentstoolkit-cli`) y activar las skills con `export ATK_FRONTIER=true TEAMSFX_AGENT_SKILLS=true`. Sin `ATK_FRONTIER` la CLI 1.1.18 genera el paquete sin las skills, aunque la documentación solo menciona `TEAMSFX_AGENT_SKILLS`.
-   - En [env/.env.dev](../env/.env.dev), poner en `MATERIAL_COMUN_URL` la URL de la carpeta del paso 1.
-   - Ejecutar `atk provision --env dev` e iniciar sesión con la cuenta de Microsoft 365 de la fiscal, que es la que tiene Copilot. La primera vez crea el agente; las siguientes lo actualizan con lo que haya en `agente/`.
-   - Lo que se despliega está en [agente/declarativeAgent.json](../agente/declarativeAgent.json): instrucciones, skills, web limitada (boe.es, poderjudicial.es y fiscal.es; cabe una cuarta), intérprete de código y la carpeta de material común como conocimiento.
+2. En GitHub, crear la variable `MATERIAL_COMUN_URL` (Settings → Secrets and variables → Actions → Variables) con la URL de la carpeta del paso 1.
+3. Instalar el agente **Penalisto** ([ADR 0007](adr/0007-agente-declarativo-desde-el-repo.md)). Cada cambio en `agente/` que llega a `main` hace que la GitHub Action genere `penalisto.zip` y lo publique en [Releases](https://github.com/escorponox/penalisto-skills/releases/latest). La fiscal no instala nada:
+   - Descargar [penalisto.zip](https://github.com/escorponox/penalisto-skills/releases/latest/download/penalisto.zip).
+   - En Teams o en la app de Microsoft 365: Aplicaciones → Administrar tus aplicaciones → Cargar una aplicación personalizada, y elegir el .zip.
+   - Repetirlo cada vez que haya una versión nueva: la app conserva su ID, así que sustituye a la anterior.
+   - Lo que lleva el paquete está en [agente/declarativeAgent.json](../agente/declarativeAgent.json): instrucciones, skills, web limitada (boe.es, poderjudicial.es y fiscal.es; cabe una cuarta), intérprete de código y la carpeta de material común como conocimiento.
+   - Para generarlo en local: `MATERIAL_COMUN_URL=… ./empaquetar.sh` (necesita Node), que lo deja en `dist/penalisto.zip`.
 
    Si el tenant no deja subir apps propias, crearlo a mano en el creador de agentes:
    - **Instrucciones**: pegar [agente/instrucciones.md](../agente/instrucciones.md) entero.
@@ -56,7 +58,8 @@ Interrogar y Extractar pueden alternarse en varios chats. Cualquier chat se pued
 
 ## Por comprobar en su tenant
 
-- Que su cuenta puede subir apps personalizadas (si no, `atk provision` falla y hay que pedírselo al administrador o usar el creador de agentes).
+- Que su cuenta puede cargar apps personalizadas: tiene que aparecerle "Cargar una aplicación personalizada" en Teams. Si no, hay que pedírselo al administrador o usar el creador de agentes.
+- Que cargar una versión nueva de `penalisto.zip` sustituye a la anterior y no deja dos Penalisto.
 
 - Que el intérprete de código y las skills funcionan juntos en el mismo agente.
 - Que una skill admite archivos además del SKILL.md.
