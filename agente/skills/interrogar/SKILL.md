@@ -38,7 +38,7 @@ Cada respuesta mueve la frontera. Una pregunta que depende de otra todavía abie
 
 ## Ramas del árbol
 
-Recorre todos los apartados del Extracto en su orden, que es el de dependencia. Dentro del Fundamento de la acusación: delitos y título de participación → circunstancias modificativas → penas → responsabilidad civil → lo que se descarta.
+Recorre todos los apartados del Extracto en su orden, que es el de dependencia. Dentro del Fundamento de la acusación: qué está acreditado y con qué prueba → delitos y título de participación → circunstancias modificativas → penas → responsabilidad civil → lo que se descarta. Para cada acusado y delito tienes que saber qué prueba hay, dónde está, qué acredita, qué problemas tiene y por qué basta para condenar; si falta alguna, pregunta.
 
 ## Terminado
 

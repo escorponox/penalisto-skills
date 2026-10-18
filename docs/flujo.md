@@ -10,7 +10,7 @@ Guía para las personas. El vocabulario está en [CONTEXT.md](../CONTEXT.md) y l
 | `grill-me` / `grilling` | Interrogar | Desde aquí se lanza Investigar y se analizan documentos |
 | `research` | Investigar | Web limitada y sin datos del Asunto ([ADR 0002](adr/0002-web-limitada-sin-datos-del-asunto.md)) |
 | `to-spec` | Extractar | El Extracto hace de spec |
-| — | Foliar | Específico de la causa ([ADR 0004](adr/0004-folios-se-concilian-despues.md)) |
+| — | Foliar | Específico de la causa ([ADR 0006](adr/0006-folios-son-paginas-de-cada-acontecimiento.md)) |
 | `implement` | Calificar | La Calificación es lo que sale del flujo |
 | `code-review` | Revisar | Tres ejes: Extracto, Estándares, Legal |
 | `handoff` | Traspaso | Emite el Extracto, no un documento aparte ([ADR 0001](adr/0001-extracto-unico-documento-vivo.md)) |
@@ -29,15 +29,15 @@ Guía para las personas. El vocabulario está en [CONTEXT.md](../CONTEXT.md) y l
 
 ## Por cada Asunto
 
-1. Guardar en una carpeta propia del Asunto (en OneDrive o en el equipo) los **PDF de la causa**, con nombres que digan qué contienen ("Tomo 1 – atestado y declaraciones.pdf"), y, si existe, el **índice de la causa con folios**. Ahí se irá guardando también el último Extracto.
+1. Guardar en una carpeta propia del Asunto (en OneDrive o en el equipo) los **PDF de la causa, un PDF por Acontecimiento**, con nombres que digan qué contienen ("Atestado GC.pdf", "Declaración judicial perjudicada.pdf"), y, si existe, el **índice de la causa**. Así la página de cada PDF es su folio ([ADR 0006](adr/0006-folios-son-paginas-de-cada-acontecimiento.md)). Ahí se irá guardando también el último Extracto.
 2. Para **cada chat**: abrir Penalisto, **adjuntar** los PDF de la causa y el último Extracto (si ya hay), y escribir el nombre del paso solo, al principio del mensaje. Para Foliar, adjuntar también el índice; para Revisar, el Extracto y la Calificación.
 
 | Paso | Qué hace | Termina cuando |
 |---|---|---|
 | **Interrogar** | Preguntas por rondas con una respuesta propuesta. Ella puede contestar, pedir que investigue algo o que analice un documento. | No queda ningún apartado del Extracto sin respuesta o sin anotar en Pendiente, y ella confirma que hay un conocimiento compartido. |
-| **Extractar** | Redacta o actualiza el Extracto sin preguntar. Cita por documento, fecha y página del PDF. | Cada apartado está completo o anotado en Pendiente, y cada afirmación tiene su cita. |
-| **Foliar** | Cambia las páginas del PDF por los folios reales, por tandas (o con el índice). | Ninguna cita queda solo con la página del PDF, salvo las anotadas en Pendiente. |
-| **Calificar** | Genera la Calificación a partir del Extracto. Si Pendiente no está vacío o faltan folios, lo avisa y pregunta si sigue. | Cada elemento de la Calificación sale del Extracto. |
+| **Extractar** | Redacta o actualiza el Extracto sin preguntar, con el estilo de sus extractos. Cita "A. [nombre del PDF] (f. x)". | Cada apartado está completo o anotado en Pendiente, cada afirmación tiene su cita y el Fundamento responde a las cinco preguntas para cada acusado y delito. |
+| **Foliar** | Pide en una sola lista el número de Acontecimiento de cada PDF citado (o lo saca del índice) y lo pone en las citas. | Ninguna cita lleva el nombre del PDF entre corchetes, salvo las anotadas en Pendiente. |
+| **Calificar** | Genera la Calificación a partir del Extracto. Si hay Pendiente o falta Foliar, lo avisa y pregunta si sigue. | Cada elemento de la Calificación sale del Extracto. |
 | **Revisar** | **En un chat nuevo.** Hallazgos graves y menores en los ejes Extracto, Estándares y Legal, sin tocar nada. Después aplica los que ella acepte. | Ella ha decidido sobre cada hallazgo. |
 | **Traspaso** | Cierra el chat y emite el Extracto en .docx. | Un chat nuevo podría seguir solo con el Extracto. Después ella lo **descarga, sustituye el anterior en la carpeta del Asunto y lo adjunta en el chat siguiente**. |
 

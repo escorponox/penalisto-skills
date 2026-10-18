@@ -34,6 +34,14 @@ _Avoid_: fiscal de sala
 Un procedimiento penal concreto en el que la fiscal tiene que calificar.
 _Avoid_: caso, expediente, causa
 
+**Acontecimiento**:
+Cada documento de la causa tal como está numerado en el expediente electrónico (atestado, declaración, auto…). La fiscal adjunta cada uno en su propio PDF. Se cita "A. 9".
+_Avoid_: documento, tomo
+
+**Folio**:
+Una página dentro de un Acontecimiento: coincide con la página de su PDF. Se cita junto al Acontecimiento: "A. 9 (f. 2-3)".
+_Avoid_: página
+
 **Tipo de procedimiento**:
 La clase de procedimiento del Asunto (sumario, abreviado, jurado, delitos leves…). Determina la forma de la Calificación.
 _Avoid_: tipo de causa
@@ -53,7 +61,7 @@ Paso en el que Penalisto redacta o actualiza el Extracto a partir de lo ya fijad
 _Avoid_: resumir
 
 **Foliar**:
-Paso posterior a Extractar en el que Penalisto repasa con la fiscal cada cita del Extracto para sustituir la página del PDF por el folio real de la causa.
+Paso posterior a Extractar en el que Penalisto acuerda con la fiscal el número de Acontecimiento de cada PDF citado en el Extracto. Los folios no cambian: ya son las páginas de cada PDF.
 _Avoid_: conciliar, citar
 
 **Calificar**:
